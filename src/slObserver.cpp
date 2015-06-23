@@ -1,10 +1,10 @@
 #include "slObserver.h"
 
-virtual void event(event_type tag){
+void slObserver::event(event_type tag){
     std::cout << "foo" << std::endl;
 }
 
-virtual void event(event_type tag, void *param){
-    //using void type EXAMPLE: int *num = (int *)param;
+void slObserver::event(event_type tag, void *param){
+    //using void type EXAMPLE: int *num = (int *)param; <= need space among to int and astarisk in cast.
     std::cout << "foo" << std::endl;
 }
